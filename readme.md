@@ -18,14 +18,6 @@ Chame a função para os seguintes valores e exiba o resultado no console: 15, 1
  * @param {number} idade - A idade da pessoa.
  * @returns {string} - "Menor de idade" ou "Maior de idade" baseado na idade.
  */
-function verificarIdade(idade) {
-    return idade < 18 ? "Menor de idade" : "Maior de idade";
-}
-
-// Exemplos de uso:
-console.log(verificarIdade(15)); // Menor de idade
-console.log(verificarIdade(18)); // Maior de idade
-console.log(verificarIdade(21)); // Maior de idade
 ```
 
 #### Exercício 2: Definição do Dia da Semana
@@ -47,15 +39,6 @@ Caso o número seja inválido, retorne "Número inválido". Teste a função com
  * @param {number} dia - O número representando o dia da semana (1 a 7).
  * @returns {string} - O nome do dia da semana ou "Número inválido" se o número for inválido.
  */
-function definirDiaDaSemana(dia) {
-    const dias = ["Número inválido", "Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
-    return dias[dia] || "Número inválido";
-}
-
-// Exemplos de uso:
-console.log(definirDiaDaSemana(3)); // Terça-feira
-console.log(definirDiaDaSemana(7)); // Sábado
-console.log(definirDiaDaSemana(8)); // Número inválido
 ```
 
 #### Exercício 3: Par ou Ímpar
@@ -76,14 +59,6 @@ Teste a função com os números 10, 15 e 22.
  * @param {number} numero - O número a ser verificado.
  * @returns {string} - "Par" se o número for par, "Ímpar" caso contrário.
  */
-function parOuImpar(numero) {
-    return numero % 2 === 0 ? "Par" : "Ímpar";
-}
-
-// Exemplos de uso:
-console.log(parOuImpar(10)); // Par
-console.log(parOuImpar(15)); // Ímpar
-console.log(parOuImpar(22)); // Par
 ```
 
 #### Exercício 4: Verificação de Acesso ao Sistema
@@ -107,13 +82,6 @@ Implemente a função `podeAcessar` que recebe um objeto com as propriedades: id
  * @param {boolean} usuario.isBlocked - Se a conta do usuário está bloqueada.
  * @returns {boolean} - Retorna true se o usuário pode acessar o sistema, caso contrário, false.
  */
-function podeAcessar({ idade, isAdmin, isBlocked }) {
-    return (idade > 18 || isAdmin) && !isBlocked;
-}
-
-// Exemplos de uso:
-console.log(podeAcessar({ idade: 20, isAdmin: false, isBlocked: false })); // true
-console.log(podeAcessar({ idade: 16, isAdmin: true, isBlocked: true })); // false
 ```
 
 #### Exercício 5: Cálculo de Desconto
@@ -137,10 +105,4 @@ A função deve retornar o preço com o desconto aplicado. Teste a função com 
  * @param {number} porcentagemDesconto - A porcentagem de desconto a ser aplicada.
  * @returns {number} - O preço com o desconto aplicado.
  */
-const calcularDesconto = (precoOriginal, porcentagemDesconto) => {
-    return precoOriginal - (precoOriginal * (porcentagemDesconto / 100));
-};
-
-// Exemplos de uso:
-console.log(calcularDesconto(100, 10)); // 90
-console.log(calcularDesconto(250, 20)); // 200
+```
